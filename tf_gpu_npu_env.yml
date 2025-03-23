@@ -1,0 +1,23 @@
+name: tf_gpu  # Ortam ismini buraya yazabilirsin
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9  # Python 3.9 sürümü
+  - cudatoolkit-dev 
+  - cudnn-dev
+  - notebook
+  - jupyter
+  - jupyterlab
+  - numpy=1.26.4
+  - cudatoolkit=11.2.2
+  - cudnn=8.1.0.77
+  - matplotlib=3.7.0  # Matplotlib, görselleştirme için
+  - scikit-learn=1.3.2  # scikit-learn, makine öğrenmesi için
+  - pip  # pip'in ortamda yüklü olması gerekmektedir
+  - pip:
+    - tensorflow==2.10.1  # TensorFlow, derin öğrenme için
+    - tensorflow-addons==0.22.0  # TensorFlow ek paketleri
+    - h5py==3.13.0  # HDF5 desteği
+    - keras==2.10.0  # Keras, TensorFlow API'si
+    - glob2==0.7  # Glob modülü için pip paketi
